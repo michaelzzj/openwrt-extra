@@ -8,14 +8,14 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=webui-aria2
-PKG_VERSION:=20141215
+PKG_VERSION:=20160425
 PKG_RELEASE:=1
 PKG_MAINTAINER:=nanpuyue <nanpuyue@gmail.com>
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/ziahamza/webui-aria2.git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
-PKG_SOURCE_VERSION:=ba7187d81bc64d6bcd2adfdbd4e9e4988b08b94f
+PKG_SOURCE_VERSION:=6b35614ee6a3054a3c885c347c03c08b87dbf0c9
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 
 include $(INCLUDE_DIR)/package.mk
@@ -39,10 +39,11 @@ endef
 
 define Package/webui-aria2/install
 	$(INSTALL_DIR) $(1)/www/webui-aria2
-	$(CP) $(PKG_BUILD_DIR)/fonts $(1)/www/webui-aria2
-	$(CP) $(PKG_BUILD_DIR)/js $(1)/www/webui-aria2
-	$(CP) $(PKG_BUILD_DIR)/img $(1)/www/webui-aria2
 	$(CP) $(PKG_BUILD_DIR)/css $(1)/www/webui-aria2
+	$(CP) $(PKG_BUILD_DIR)/fonts $(1)/www/webui-aria2
+	$(CP) $(PKG_BUILD_DIR)/flags $(1)/www/webui-aria2
+	$(CP) $(PKG_BUILD_DIR)/img $(1)/www/webui-aria2
+	$(CP) $(PKG_BUILD_DIR)/js $(1)/www/webui-aria2
 	$(CP) $(PKG_BUILD_DIR)/index.html $(1)/www/webui-aria2
 	$(CP) $(PKG_BUILD_DIR)/configuration.js $(1)/www/webui-aria2
 	$(CP) $(PKG_BUILD_DIR)/favicon.ico $(1)/www/webui-aria2
