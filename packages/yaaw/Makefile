@@ -8,14 +8,22 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=yaaw
+<<<<<<< HEAD
 PKG_VERSION:=20160417
+=======
+PKG_VERSION:=2014-07-12
+>>>>>>> refs/remotes/nanpuyue/master
 PKG_RELEASE:=1
 PKG_MAINTAINER:=nanpuyue <nanpuyue@gmail.com>
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=git://github.com/binux/yaaw.git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
+<<<<<<< HEAD
 PKG_SOURCE_VERSION:=84a0fb8f13a067bd32bb17936f0a74742ffcc224
+=======
+PKG_SOURCE_VERSION:=c23ae2456ec95778651411e5b148b836307f6d8d
+>>>>>>> refs/remotes/nanpuyue/master
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 
 include $(INCLUDE_DIR)/package.mk

@@ -109,11 +109,45 @@ msgstr "RPC设置"
 msgid "RPC port"
 msgstr "RPC端口"
 
-msgid "RPC authentication required"
-msgstr "启用RPC认证"
-
 msgid "RPC username"
 msgstr "RPC用户名"
 
 msgid "RPC password"
 msgstr "RPC密码"
+
+msgid "User agent value"
+msgstr "用户代理(UA)"
+
+msgid "Prefix of peer ID"
+msgstr "peer ID前缀"
+
+msgid "Extra Settings"
+msgstr "附加选项"
+
+msgid "List of extra settings"
+msgstr "附加选项列表"
+
+msgid "View Json-RPC URL"
+msgstr "查看 Json-RPC URL"
+
+msgid "RPC authentication method"
+msgstr "RPC认证方式"
+
+msgid "No Authentication"
+msgstr "无认证"
+
+msgid "Username & Password"
+msgstr "用户名与密码"
+
+msgid "Token"
+msgstr "令牌"
+
+msgid "RPC Token"
+msgstr "RPC令牌"
+
+msgid "Generate Randomly"
+msgstr "随机生成"
+
+msgid "Use WebSocket"
+msgstr "使用WebSocket"
+
